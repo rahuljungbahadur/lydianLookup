@@ -1,0 +1,9 @@
+{
+	"name": "lydianLookup",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6c37b6c4-d0be-4dea-a37c-daf75b4979bf",
+		"tenantId": "e0d1efb7-5b64-49b3-a214-1d0daf148db0"
+	}
+}
