@@ -1,0 +1,23 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r setup}
+library(rvest)
+library(tidyverse)
+```
+
+```{r}
+webAddress <- "https://lydianlyric.com/lydian-floor-plans/?gclid=CjwKCAjw9uKIBhA8EiwAYPUS3JXazpoD8QBQS_yMwWMu6Oxr34IqAw3jUB-GIiHIcEW8MmWUX5bhEhoCS84QAvD_BwE"
+```
+
+```{r}
+availableUnits <- read_html(webAddress) %>%
+  html_node(xpath = '//*[@id="floor-plans"]/table') %>%
+  html_table()
+  
+```
+
+
+
